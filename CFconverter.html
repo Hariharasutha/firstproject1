@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFconverter</title>
+    <link rel="stylesheet" href="cfc.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Celcius to Fahrenheit converter</h1>
+     <div class="inputdiv">
+        <input type="number" id="suthan" placeholder="Enter Celcius ">
+     </div>   
+    <div>
+        <button onclick="converter()">ENTER</button>
+    </div>
+    <div>
+        <div id="result"></div>
+    </div>    
+</div>
+
+
+<script>
+    function converter(){
+        const inCel = Number(document.getElementById("suthan").value)
+        const inFah = (inCel*(9/5)+32)
+        const resul = document.getElementById("result");
+            resul.innerHTML=inFah+"<sup>o</sup>F"
+    }
+    ar
+    
+
+</script>
+
+    
+    
+</body>
+</html>
